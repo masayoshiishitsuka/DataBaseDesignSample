@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+##menbersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|grouo_id|integer|null: false, foreign_key: true|
+
+### Assosiation
+- belongs_to :group
+- belongs_to :user
