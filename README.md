@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-##menbersテーブル
+## menbersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
