@@ -24,7 +24,7 @@
 - has_many :members
 - has-many :messages
 
-## menbersテーブル
+## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -43,3 +43,7 @@
 |image|string|nill: true|
 |group_id|interger|nill: false, index: true|
 |user_id|interger|nill: false, index: true|
+
+### Assosiation
+- belongs_to :user
+- belongs_to :group
