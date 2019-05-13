@@ -11,7 +11,7 @@
 ### Assosiation
 - has_many :groups through :members
 - has_many :members
-- has-many :messages
+- has_many :messages
 
 ## groupsテーブル
 
@@ -22,14 +22,14 @@
 ### Assosiation
 - has_many :users through :members
 - has_many :members
-- has-many :messages
+- has_many :messages
 
 ## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|grouo_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Assosiation
 - belongs_to :group
@@ -41,8 +41,8 @@
 |------|----|-------|
 |body|text|nill: true|
 |image|string|nill: true|
-|group_id|interger|nill: false, index: true|
-|user_id|interger|nill: false, index: true|
+|group_id|references|nill: false, index: true, foreign_key: true|
+|user_id|references|nill: false, index: true, foreign_key: true|
 
 ### Assosiation
 - belongs_to :user
