@@ -17,7 +17,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|nill:false|
+|name|string|null:false|
 
 ### Assosiation
 - has_many :users through :members
@@ -39,10 +39,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|nill: true|
-|image|string|nill: true|
-|group_id|references|nill: false, index: true, foreign_key: true|
-|user_id|references|nill: false, index: true, foreign_key: true|
+|body|text|null: true|
+|image|string|null: true|
+|group_id|references|null: false, index: true, foreign_key: true|
+|user_id|references|null: false, index: true, foreign_key: true|
 
 ### Assosiation
 - belongs_to :user
